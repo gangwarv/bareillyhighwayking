@@ -6,34 +6,58 @@ app.controller("HeaderController", function ($scope) {
   ctrl.appName = "Bareilly Highway King";
   ctrl.imgs = {
     banner: {
-      src: "img/banner.jpg",
+      src: "img/banner-960x400.jpg",
       alt: "banner",
     },
   };
 });
+app.controller("GalleryController", function ($scope) {
+  var ctrl = this;
+  
+  ctrl.pics = [
+    {
+      title: "Front Area",
+      src: "img/gallery/house1.jpg",
+    },
+    {
+      title: "Lawn",
+      src: "img/gallery/house2.jpg",
+    },
+    {
+      title: "Sitting Area",
+      src: "img/gallery/house3.jpg",
+    },
+    {
+      title: "Kitchen",
+      src: "img/gallery/house4.jpg",
+    },
+  ];
+  // setInterval(() => {
+  //   ctrl.pics = ctrl.pics.reverse()
+  // }, 2000);
+});
 app.controller("ProfilesController", function ($scope) {
-
   this.profiles = [
     {
       name: "Sher Dada",
       designation: "Partner",
-      pic: "img/pics/p1.jpg",
+      pic: "img/pics/pic1-670x670.jpg",
     },
     {
-      name: "Dharmendra Da",
-      designation: "Brother",
-      pic: "img/pics/p2.jpg",
+      name: "PROFILE",
+      designation: "Partner",
+      pic: "img/pics/profile-670x670.jpg",
     },
     {
-      name: "Third Party",
-      designation: "Berozgar",
-      pic: "img/pics/p3.jpg",
+      name: "PROFILE",
+      designation: "Partner",
+      pic: "img/pics/profile-670x670.jpg",
     },
     {
-        name: "Unknown Person",
-        designation: "Waiter",
-        pic: "img/pics/p4.jpg",
-      },
+      name: "PROFILE",
+      designation: "Partner",
+      pic: "img/pics/profile-670x670.jpg",
+    },
   ];
 });
 app.controller("MainController", function () {
